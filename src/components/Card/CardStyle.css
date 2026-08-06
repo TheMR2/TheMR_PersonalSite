@@ -1,0 +1,47 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(30, 41, 59, 0.7);
+    width: 390px;
+    height: 510px;
+    border-radius: 10px;
+
+}
+.card:hover{
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-5px);
+}
+.image{
+    width:100%;
+    height:50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.types{
+    display: flex;
+    margin-top: 10px;
+}
+
+.type{
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+    background-color: #273647b4;
+    color: #00DBE7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: min-content;
+}
+.type:hover{
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-5px);
+}
+
+.project{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}

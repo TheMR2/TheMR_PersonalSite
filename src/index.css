@@ -1,0 +1,32 @@
+:root{
+  background-color: #051424;
+  font-family: "Montserrat", sans-serif;
+  
+}
+a {
+    cursor: pointer;
+    color: #a5c4d4; /* لون النص الفاتح اللي في الصورة */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* مسافة بين النص والسهم */
+    transition: color 0.2s ease-in-out;
+}
+
+/* إضافة السهم أوتوماتيك بعد كل رابط */
+a::after {
+    content: "↗";
+    font-size: 1.1em;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* تأثير بسيط عند الوقوف على الرابط بالماوس (Hover) */
+a:hover {
+    color: #ffffff;
+}
+
+a:hover::after {
+    transform: translate(3px, -3px); /* حركة خفيفة للسهم لفوق ويبرز للخارج */
+}
