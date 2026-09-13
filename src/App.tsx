@@ -1,19 +1,45 @@
 
+import './App.css';
 import Card from './components/Card/Card';
 import Button from './components/Button/Button';
-
-
+import Card2 from './components/Card2/Card2';
+import IconButton from './components/IconButton/IconButton';
+import * as Icons from "react-icons/bs";
+import MRLogo from '../src/assets/Icons/MRLabel.svg';
+import HorizontalScroll from './components/Test/test';
 function App() {
   return(
-    <div>
-      <Card
-       array={["C++","Node.js","Python"]} 
-       image="https://fastly.picsum.photos/id/741/536/354.jpg?hmac=JV13P4XHP5tamm2vlyXNFZxns3IyVLT_akGo-VhYPkw" 
-       title='Project' 
-       des='Good PRoject to show for testing' 
-       url='youtube.com'></Card>
-      <Button></Button>
-
+    <div className='main'>
+      <div className='topBar'>
+        <h1 className='logo'>MR</h1>
+        <div className='taps'>
+          <Button isColored={false} label={'Work'} isBorder={false}/>
+          <Button isColored={false} label={'Skills'} isBorder={false}/>
+          <Button isColored={false} label={'About'} isBorder={false}/>
+          <Button isColored={false} label={'Contact'} isBorder={false}/>
+        </div>
+        <Button isColored={true} label={'Resume'} isBorder={false} width={100} height={10}/>
+      </div>
+      <div className='welcomeTitle'>
+        <img className='logo-img' src={MRLogo} alt="MR Logo"/>
+        <h1 className='hero-title'>Building the Future of<br/>Digital Experiences.</h1>
+        <p className='hero-subtitle'>Developer. Designer. Problem Solver. Bridging the gap<br/>between cutting-edge engineering and avant-garde<br/>aesthetics.</p>
+        <Button isColored={true} isBorder={false} label={'Explore My Work →'}/>
+      </div>
+      <div className='selectedWork'>
+        <h1 className='selectedWorkTitle'>Selected Work</h1>
+        <div className='horizontal-scroll'>
+          <Card url={'#'} title={'Project 1'} description={'Description of Project 1'} image={'https://placehold.co/388x256'} />
+        </div>
+        <div className='technicalArsenal'>
+          <h1 className='technicalArsenalTitle'>Technical Arsenal</h1>
+          <div className='TechnicalArsenalCards'>
+            <Card2 title={'Project 1'} description={'Description of Project 1'} icon={Icons.BsCode} />
+            <Card2 title={'Project 1'} description={'Description of Project 1'} icon={Icons.BsCode} />
+            <Card2 title={'Project 1'} description={'Description of Project 1'} icon={Icons.BsCode} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,8 @@
+
 :root{
-  background-color: #051424;
-  font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    background-color: #051424;
+    font-family: "Montserrat", sans-serif;
   
 }
 a {
@@ -13,6 +15,7 @@ a {
     align-items: center;
     gap: 8px; /* مسافة بين النص والسهم */
     transition: color 0.2s ease-in-out;
+    font-weight: bolder;
 }
 
 /* إضافة السهم أوتوماتيك بعد كل رابط */
@@ -24,9 +27,15 @@ a::after {
 
 /* تأثير بسيط عند الوقوف على الرابط بالماوس (Hover) */
 a:hover {
-    color: #ffffff;
+    color: #00dbe7;
 }
 
 a:hover::after {
     transform: translate(3px, -3px); /* حركة خفيفة للسهم لفوق ويبرز للخارج */
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

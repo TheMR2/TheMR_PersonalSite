@@ -1,0 +1,26 @@
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    transition: all ease-in-out 0.5s;
+    border-color: #b9cacb;
+    border-width: 1px;
+    border-style: solid;
+    width: fit-content;
+    color: #b9cacb;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.button:hover{
+    transition: all ease-in-out 0.5s;
+    transform: translateY(-1px);
+}
+
+.button:active{
+    transition: all ease-in-out 0.1s;
+    transform: translateY(1px);
+
+}

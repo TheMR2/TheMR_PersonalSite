@@ -1,0 +1,10 @@
+.icon-button{
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+    color: #b9cacb;
+}
+.icon-button:hover{
+    transition: all ease-in-out 0.2s;
+    transform:translateY(-2px);
+    color: #00dbe7;
+}
