@@ -100,6 +100,7 @@ body{
   scrollbar-width: none;
 }
 .technicalArsenal{
+  background-color: #031121;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -109,6 +110,9 @@ body{
   padding-top: 96px;
 }
 .technicalArsenalTitle{
+  text-decoration: underline;
+  text-decoration-color: #00f2ff;
+  text-underline-offset: 16px;
   color: #ffffff;
   font-size: 32px;
   margin-top: 120px;
@@ -123,4 +127,26 @@ body{
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.footer-title{
+  color: #ffffff;
+  font-size: 32px;
+  margin-top: 120px;
+  margin-bottom: 24px;
+  text-decoration-thickness: 4px;
+}
+.footer-subtitle{
+  color: #b9cacb;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  text-align: center;
 }

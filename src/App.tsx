@@ -6,7 +6,6 @@ import Card2 from './components/Card2/Card2';
 import IconButton from './components/IconButton/IconButton';
 import * as Icons from "react-icons/bs";
 import MRLogo from '../src/assets/Icons/MRLabel.svg';
-import HorizontalScroll from './components/Test/test';
 function App() {
   return(
     <div className='main'>
@@ -40,8 +39,16 @@ function App() {
           </div>
         </div>
       </div>
+      <div className='footer'>
+        <h1 className='footer-title'>Let's Build Something !</h1>
+        <p className='footer-subtitle'>Currently open for new opportunities and interesting collaborations.</p>
+        <Button isBorder={true} isColored={false} label={'Get In Touch'} />
+      </div>
     </div>
   );
 }
+
+
+
 
 export default App;
