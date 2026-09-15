@@ -9,9 +9,10 @@ type props={
     color?:string;
     width?:number;
     height?:number;
+    onClick?:()=>void;
 }
 
-function Button({label,isColored,isBorder,width,height,fontsize}:props){
+function Button({label,isColored,isBorder,width,height,fontsize,onClick}:props){
     let styling:CSSProperties ={}
         styling = {
             borderWidth:isBorder? '2px':'0px',
@@ -19,7 +20,7 @@ function Button({label,isColored,isBorder,width,height,fontsize}:props){
             background: isColored? 'linear-gradient(to right,#3031c0 , #00f2ff)':'transparent'
         }
     return(
-        <div style={{...styling,width:width,height:height,fontSize:fontsize}} className='button'>{label}</div>
+        <div style={{...styling,width:width,height:height,fontSize:fontsize}} className='button' onClick={onClick}>{label}</div>
     )
 }
 
