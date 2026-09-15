@@ -17,7 +17,7 @@ function App() {
           <Button isColored={false} label={'About'} isBorder={false}/>
           <Button isColored={false} label={'Contact'} isBorder={false}/>
         </div>
-        <Button isColored={true} label={'Resume'} isBorder={false} width={100} height={10}/>
+        <Button isColored={true} label={'Get In Touch'} isBorder={false} width={100} height={10}/>
       </div>
       <div className='welcomeTitle'>
         <img className='logo-img' src={MRLogo} alt="MR Logo"/>
@@ -43,6 +43,15 @@ function App() {
         <h1 className='footer-title'>Let's Build Something !</h1>
         <p className='footer-subtitle'>Currently open for new opportunities and interesting collaborations.</p>
         <Button isBorder={true} isColored={false} label={'Get In Touch'} />
+      </div>
+      <div className='copyright'>
+        <h3 style={{ color: '#b9cacb', fontSize: '12px' }}>© 2024 MR Creative Technologist. Built with precision.</h3>
+        <div style={{display:'flex',flexDirection:'row'}}>
+          <Button fontsize={14} isBorder={false} isColored={false} label={'Github'} />
+          <Button fontsize={14} isBorder={false} isColored={false} label={'LinkedIn'} />
+          <Button fontsize={14} isBorder={false} isColored={false} label={'Twitter'} />
+        </div>
+
       </div>
     </div>
   );

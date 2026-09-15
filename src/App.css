@@ -150,3 +150,14 @@ body{
   margin-bottom: 24px;
   text-align: center;
 }
+
+
+.copyright{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 64px;
+  background-color: #021020;
+}
